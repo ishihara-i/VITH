@@ -3,12 +3,14 @@ import { StylesProvider, ThemeProvider as MaterialThemeProvider } from '@materia
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import theme from 'theme';
 
+import Body from 'components/body/Index';
+
 function App() {
   return (
     <StylesProvider injectFirst>
       <MaterialThemeProvider theme={theme}>
         <StyledThemeProvider theme={theme}>
-          <div></div>
+          <Body></Body>
         </StyledThemeProvider>
       </MaterialThemeProvider>
     </StylesProvider>
